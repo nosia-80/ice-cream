@@ -1,131 +1,168 @@
-<section>
-  <h1>Ice cream made with <span>passion</span></h1>
-  <ul>
-    <li><a href="">Products</a></li>
-    <li><a href="">How it’s made?</a></li>
-  </ul>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__top-part">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Ice cream made with <span class="hero__title--accent">passion</span>
+        </h1>
 
-  <ul>
-    <li>
-      <span>16</span>
-      <p>cafes</p>
-    </li>
-    <li>
-      <span>23</span>
-      <p>food trucks</p>
-    </li>
-  </ul>
+        <ul class="hero-nav">
+          <li class="hero-nav__item">
+            <a class="button button--primary hero-nav__button" href="">
+              Products
+            </a>
+          </li>
+          <li class="hero-nav__item">
+            <a class="button button--secondary hero-nav__button" href="">
+              How it’s made?
+            </a>
+          </li>
+        </ul>
+      </div>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et
-  </p>
-  <a href="">
-    <svg>
-      <use href="./images/icons.svg#arrow-right"></use>
-    </svg>
-  </a>
+      <ul class="hero-account">
+        <li class="hero-account__item">
+          <span class="hero-account__number">16</span>
+          <p class="hero-account__type">cafes</p>
+        </li>
+        <li class="hero-account__item">
+          <span class="hero-account__number">23</span>
+          <p class="hero-account__type">food trucks</p>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Rainbow ice cream -->
-  <picture>
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream.webp    1x,
-        ./images/ice-cream/ice-cream@2x.webp 2x
-      "
-      media="(min-width: 1110px)"
-      type="image/webp"
-    />
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream.png    1x,
-        ./images/ice-cream/ice-cream@2x.png 2x
-      "
-      media="(min-width: 1110px)"
-    />
+    <div class="hero__info">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a class="more" href="" aria-label="Continue reading">
+        <svg class="more__icon">
+          <use href="./images/icons.svg#arrow-right"></use>
+        </svg>
+      </a>
+    </div>
 
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream-tab.webp    1x,
-        ./images/ice-cream/ice-cream-tab@2x.webp 2x
-      "
-      media="(min-width: 768px)"
-      type="image/webp"
-    />
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream-tab.png    1x,
-        ./images/ice-cream/ice-cream-tab@2x.png 2x
-      "
-      media="(min-width: 768px)"
-    />
+    <!-- Rainbow ice cream -->
+    <picture>
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream.webp    1x,
+          ./images/ice-cream/ice-cream@2x.webp 2x
+        "
+        media="(min-width: 1110px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream.png    1x,
+          ./images/ice-cream/ice-cream@2x.png 2x
+        "
+        media="(min-width: 1110px)"
+      />
 
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream-mob.webp    1x,
-        ./images/ice-cream/ice-cream-mob@2x.webp 2x
-      "
-      media="(max-width: 767px)"
-      type="image/webp"
-    />
-    <source
-      srcset="
-        ./images/ice-cream/ice-cream-mob.png    1x,
-        ./images/ice-cream/ice-cream-mob@2x.png 2x
-      "
-      media="(max-width: 767px)"
-    />
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream-tab.webp    1x,
+          ./images/ice-cream/ice-cream-tab@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream-tab.png    1x,
+          ./images/ice-cream/ice-cream-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-    <img src="./images/ice-cream/ice-cream-tab.png" alt="Rainbow ice cream" />
-  </picture>
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream-mob.webp    1x,
+          ./images/ice-cream/ice-cream-mob@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/ice-cream/ice-cream-mob.png    1x,
+          ./images/ice-cream/ice-cream-mob@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
 
-  <!-- Glass jug of milk -->
-  <picture>
-    <source
-      srcset="./images/milk/milk.webp 1x, ./images/milk/milk@2x.webp 2x"
-      media="(min-width: 1110px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/milk/milk.png 1x, ./images/milk/milk@2x.png 2x"
-      media="(min-width: 1110px)"
-    />
+      <img
+        class="hero__ice-cream"
+        src="./images/ice-cream/ice-cream-tab.png"
+        alt="Rainbow ice cream"
+      />
+    </picture>
 
-    <source
-      srcset="./images/milk/milk-tab.webp 1x, ./images/milk/milk-tab@2x.webp 2x"
-      media="(min-width: 768px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/milk/milk-tab.png 1x, ./images/milk/milk-tab@2x.png 2x"
-      media="(min-width: 768px)"
-    />
+    <!-- Glass jug of milk -->
+    <picture>
+      <source
+        srcset="./images/milk/milk.webp 1x, ./images/milk/milk@2x.webp 2x"
+        media="(min-width: 1110px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/milk/milk.png 1x, ./images/milk/milk@2x.png 2x"
+        media="(min-width: 1110px)"
+      />
 
-    <img src="./images/milk/milk-tab.png" alt="Glass jug of milk" />
-  </picture>
+      <source
+        srcset="
+          ./images/milk/milk-tab.webp    1x,
+          ./images/milk/milk-tab@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/milk/milk-tab.png 1x, ./images/milk/milk-tab@2x.png 2x"
+        media="(min-width: 768px)"
+      />
 
-  <!-- Girl eating ice cream -->
-  <picture>
-    <source
-      srcset="./images/girl/girl.webp 1x, ./images/girl/girl@2x.webp 2x"
-      media="(min-width: 1110px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/girl/girl.png 1x, ./images/girl/girl@2x.png 2x"
-      media="(min-width: 1110px)"
-    />
+      <img
+        class="hero__milk"
+        src="./images/milk/milk-tab.png"
+        alt="Glass jug of milk"
+      />
+    </picture>
 
-    <source
-      srcset="./images/girl/girl-tab.webp 1x, ./images/girl/girl-tab@2x.webp 2x"
-      media="(min-width: 768px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/girl/girl-tab.png 1x, ./images/girl/girl-tab@2x.png 2x"
-      media="(min-width: 768px)"
-    />
+    <!-- Girl eating ice cream -->
+    <picture>
+      <source
+        srcset="./images/girl/girl.webp 1x, ./images/girl/girl@2x.webp 2x"
+        media="(min-width: 1110px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/girl/girl.png 1x, ./images/girl/girl@2x.png 2x"
+        media="(min-width: 1110px)"
+      />
 
-    <img src="./images/girl/girl-tab.png" alt="Girl eating ice cream" />
-  </picture>
+      <source
+        srcset="
+          ./images/girl/girl-tab.webp    1x,
+          ./images/girl/girl-tab@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/girl/girl-tab.png 1x, ./images/girl/girl-tab@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img
+        class="hero__girl"
+        src="./images/girl/girl-tab.png"
+        alt="Girl eating ice cream"
+      />
+    </picture>
+  </div>
 </section>

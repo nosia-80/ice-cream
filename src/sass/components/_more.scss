@@ -1,0 +1,40 @@
+.more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+
+  transition: background-color 250ms $timing-function;
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-btn-hover-color;
+    transform: scale(1.2);
+  }
+}
+
+.more__icon {
+  width: 6px;
+  height: 6px;
+
+  transition: transform 250ms $timing-function 250ms;
+
+  @include desktop {
+    width: 9px;
+    height: 9px;
+  }
+
+  .more:hover > &,
+  .more:focus > & {
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,190 @@
+.hero {
+  background-color: $hero-bg-color;
+}
+
+.hero__container {
+  position: relative;
+
+  padding-top: 192px;
+  padding-bottom: 160px;
+
+  @media screen and (max-width: 479px) {
+    overflow: hidden;
+  }
+
+  @include tablet {
+    padding-top: 94px;
+    padding-bottom: 34px;
+  }
+
+  @include desktop {
+    padding-top: 156px;
+    padding-bottom: 56px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 83px;
+    left: 11.25%;
+
+    content: '';
+    display: block;
+    width: 344px;
+    height: 344px;
+
+    border-radius: 50%;
+    background-color: $pretitle-color;
+
+    @include tablet {
+      top: 31px;
+      left: 307px;
+
+      width: 322px;
+      height: 322px;
+    }
+
+    @include desktop {
+      top: 52px;
+      left: 390px;
+
+      width: 538px;
+      height: 538px;
+    }
+  }
+}
+
+.hero__top-part {
+  @media screen and (max-width: 767px) {
+    position: relative;
+    z-index: 1;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.hero__content {
+  width: 218px;
+
+  @include tablet {
+    width: 162px;
+  }
+
+  @include desktop {
+    width: 277px;
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  color: $primary-white-color;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include desktop {
+    margin-bottom: 25px;
+    font-size: 38px;
+  }
+
+  &--accent {
+    font-size: 48px;
+    line-height: 0.93;
+    letter-spacing: normal;
+    color: $accent-color;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.85;
+    }
+
+    @include desktop {
+      font-size: 58px;
+    }
+  }
+}
+
+.hero__info {
+  margin-top: 66px;
+  margin-left: 120px;
+  width: 114px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    margin-top: 112px;
+    margin-left: 210px;
+    width: 200px;
+  }
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  line-height: 1.5;
+  color: $primary-white-color;
+
+  @include desktop {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero__ice-cream {
+  position: absolute;
+  bottom: 0;
+  left: 36.56%;
+
+  @include tablet {
+    left: 378px;
+  }
+
+  @include desktop {
+    left: 510px;
+  }
+}
+
+.hero__milk {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    bottom: 45px;
+    left: 22px;
+  }
+}
+
+.hero__girl {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    right: 24px;
+  }
+}

@@ -1,0 +1,78 @@
+.hero-account {
+  @extend %list;
+  margin-right: 10px;
+  text-align: right;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    margin-right: 18px;
+  }
+}
+
+.hero-account__item {
+  position: relative;
+
+  & + & {
+    margin-top: 13px;
+
+    @include desktop {
+      margin-top: 15px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    z-index: 1;
+
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    background-color: $primary-white-color;
+
+    @include desktop {
+      top: -4px;
+      right: -18px;
+
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero-account__number {
+  position: relative;
+  z-index: 2;
+
+  font-family: $logo-font;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: $accent-color;
+
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero-account__type {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 8px;
+  line-height: 1.25;
+  color: $primary-white-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
