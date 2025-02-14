@@ -20,6 +20,15 @@
     background-color: $secondary-btn-hover-color;
     transform: scale(1.2);
   }
+
+  &--large {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: 0;
+    cursor: pointer;
+  }
 }
 
 .more__icon {
@@ -36,5 +45,15 @@
   .more:hover > &,
   .more:focus > & {
     transform: rotate(90deg);
+  }
+
+  .more--large > & {
+    width: 13px;
+    height: 13px;
+  }
+
+  .more--large:hover > &,
+  .more--large:focus > & {
+    transform: rotate(-90deg);
   }
 }
