@@ -1,0 +1,15 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: $main-font;
+  font-size: 12px;
+  color: $primary-text-color;
+
+  background-color: $primary-white-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

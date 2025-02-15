@@ -1,59 +1,77 @@
-<section>
-  <p>Tradition and love</p>
-  <h2>How it’s made?</h2>
+<section class="about">
+  <div class="container">
+    <div class="section-title section-title--centered about__section-title">
+      <p class="section-title__pretitle">Tradition and love</p>
+      <h2 class="section-title__text">How it’s made?</h2>
+    </div>
 
-  <!-- Cow with glass jug of milk -->
-  <picture>
-    <source
-      srcset="./images/cow/cow.webp 1x, ./images/cow/cow@2x.webp 2x"
-      media="(min-width: 1110px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/cow/cow.png 1x, ./images/cow/cow@2x.png 2x"
-      media="(min-width: 1110px)"
-    />
+    <div class="about__content">
+      <!-- Cow with glass jug of milk -->
+      <picture>
+        <source
+          srcset="./images/cow/cow.webp 1x, ./images/cow/cow@2x.webp 2x"
+          media="(min-width: 1110px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/cow/cow.png 1x, ./images/cow/cow@2x.png 2x"
+          media="(min-width: 1110px)"
+        />
 
-    <source
-      srcset="./images/cow/cow-tab.webp 1x, ./images/cow/cow-tab@2x.webp 2x"
-      media="(min-width: 768px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/cow/cow-tab.png 1x, ./images/cow/cow-tab@2x.png 2x"
-      media="(min-width: 768px)"
-    />
+        <source
+          srcset="./images/cow/cow-tab.webp 1x, ./images/cow/cow-tab@2x.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/cow/cow-tab.png 1x, ./images/cow/cow-tab@2x.png 2x"
+          media="(min-width: 768px)"
+        />
 
-    <source
-      srcset="./images/cow/cow-mob.webp 1x, ./images/cow/cow-mob@2x.webp 2x"
-      media="(max-width: 767px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/cow/cow-mob.png 1x, ./images/cow/cow-mob@2x.png 2x"
-      media="(max-width: 767px)"
-    />
+        <source
+          srcset="./images/cow/cow-mob.webp 1x, ./images/cow/cow-mob@2x.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/cow/cow-mob.png 1x, ./images/cow/cow-mob@2x.png 2x"
+          media="(max-width: 767px)"
+        />
 
-    <img src="./images/cow/cow-mob.png" alt="Cow with glass jug of milk" />
-  </picture>
+        <img
+          class="about__cow"
+          src="./images/cow/cow-mob.png"
+          alt="Cow with glass jug of milk"
+        />
+      </picture>
 
-  <p>
-    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
-    fringilla.
-  </p>
-  <p>
-    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit
-    ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-  </p>
-  <p>Aliquam erat volutpat. Aenean accumsan.</p>
+      <div class="about__overview">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__description">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__description">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
 
-  <!-- Button to continue reading -->
-  <button type="button">
-    Read more
-    <svg width="8" height="10">
-      <use href="./images/icons.svg#angle-right"></use>
-    </svg>
-  </button>
+        <!-- Button to continue reading -->
+        <button
+          class="button button--secondary button--with-icon about__button"
+          type="button"
+        >
+          Read more
+          <svg class="button__icon" width="8" height="10">
+            <use href="./images/icons.svg#angle-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
