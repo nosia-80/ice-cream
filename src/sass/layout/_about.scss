@@ -1,5 +1,7 @@
 .about {
+  position: relative;
   padding-top: 125px;
+
   background-color: $secondary-bg-color;
 
   @media screen and (min-width: $tablet) and (max-width: 1109px) {
@@ -38,6 +40,9 @@
   }
 
   @include desktop {
+    position: relative;
+    z-index: 2;
+
     margin-right: 74px;
   }
 }
@@ -53,6 +58,9 @@
   }
 
   @include desktop {
+    position: relative;
+    z-index: 2;
+
     flex-basis: 460px;
   }
 }
@@ -107,4 +115,21 @@
 
 .about__button {
   width: 176px;
+}
+
+.about__milk-splashes {
+  position: absolute;
+  bottom: 125px;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+
+  @media screen and (min-width: $tablet) and (max-width: 1109px) {
+    display: none;
+  }
+
+  @include desktop {
+    bottom: 200px;
+    z-index: 1;
+  }
 }

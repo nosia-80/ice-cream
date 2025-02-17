@@ -42,6 +42,7 @@
           class="about__cow"
           src="./images/cow/cow-mob.png"
           alt="Cow with glass jug of milk"
+          loading="lazy"
         />
       </picture>
 
@@ -74,4 +75,21 @@
       </div>
     </div>
   </div>
+
+  <!-- Milk splashes -->
+  <picture>
+    <img
+      class="about__milk-splashes"
+      srcset="
+        ./images/milk-splashes/milk-splashes-320.png   320w,
+        ./images/milk-splashes/milk-splashes-640.png   640w,
+        ./images/milk-splashes/milk-splashes-960.png   960w,
+        ./images/milk-splashes/milk-splashes-1280.png 1280w,
+        ./images/milk-splashes/milk-splashes-2560.png 2560w
+      "
+      src="./images/milk-splashes/milk-splashes-320.png"
+      alt="Milk splashes"
+      loading="lazy"
+    />
+  </picture>
 </section>

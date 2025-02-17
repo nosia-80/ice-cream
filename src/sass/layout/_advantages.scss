@@ -1,0 +1,107 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bg-color;
+
+  @media screen and (min-width: $tablet) and (max-width: 1109px) {
+    padding-top: 65px;
+  }
+}
+
+.advantages__container {
+  @media screen and (max-width: 767px) {
+    width: 326px;
+  }
+}
+
+.advantages__list {
+  @extend %list;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.advantages__item {
+  @media screen and (max-width: 767px) {
+    width: 230px;
+  }
+
+  @include tablet {
+    flex-basis: 180px;
+  }
+
+  @include desktop {
+    flex-basis: 330px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 35px;
+    }
+
+    @include tablet {
+      margin-right: 60px;
+    }
+
+    @include desktop {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages__icon {
+  display: block;
+  margin-bottom: 14px;
+
+  @include tablet {
+    margin-bottom: 35px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 11px;
+
+  font-family: $logo-font;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: $accent-color;
+
+  @include tablet {
+    margin-bottom: 13px;
+
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  line-height: 1.7;
+  color: $primary-black-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}
