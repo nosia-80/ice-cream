@@ -1,0 +1,168 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+
+  background-image: linear-gradient(
+    $secondary-bg-color 0 44%,
+    $primary-white-color 44% 100%
+  );
+
+  @include tablet {
+    min-height: 414px;
+  }
+
+  @include desktop {
+    min-height: 590px;
+  }
+}
+
+.gallery__collage {
+  display: flex;
+  width: 290px;
+  gap: 2px;
+
+  @include tablet {
+    width: 615px;
+    gap: 4px;
+  }
+
+  @include desktop {
+    width: 1010px;
+    gap: 6px;
+  }
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+
+  @include tablet {
+    gap: 4px;
+  }
+
+  @include desktop {
+    gap: 6px;
+  }
+
+  &:nth-child(1) {
+    margin-bottom: 2px;
+
+    @include tablet {
+      margin-bottom: 4px;
+    }
+
+    @include desktop {
+      margin-bottom: 7px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-top: 6px;
+
+    @include tablet {
+      margin-top: 12px;
+    }
+
+    @include desktop {
+      margin-top: 29px;
+    }
+  }
+
+  &:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  &:nth-child(4) {
+    margin-top: 16px;
+
+    @include tablet {
+      margin-top: 32px;
+    }
+
+    @include desktop {
+      margin-top: 54px;
+    }
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      margin-bottom: 38px;
+    }
+  }
+
+  &:nth-child(6) {
+    margin-top: 4px;
+
+    @include tablet {
+      margin-top: 8px;
+    }
+
+    @include desktop {
+      margin-top: 18px;
+    }
+  }
+}
+
+.gallery__small-pic {
+  width: 40px;
+
+  &:hover,
+  &:focus {
+    width: 80px;
+  }
+
+  @include tablet {
+    width: 85px;
+
+    &:hover,
+    &:focus {
+      width: 170px;
+    }
+  }
+
+  @include desktop {
+    width: 140px;
+
+    &:hover,
+    &:focus {
+      width: 280px;
+    }
+  }
+}
+
+.gallery__large-pic {
+  width: 100%;
+
+  .gallery__small-pic:hover + &,
+  .gallery__small-pic:focus + & {
+    width: 50%;
+  }
+}
+
+.gallery__small-pic,
+.gallery__large-pic {
+  cursor: pointer;
+  transition: width 500ms $timing-function;
+
+  & img {
+    border-radius: 10px;
+
+    @include tablet {
+      border-radius: 20px;
+    }
+
+    @include desktop {
+      border-radius: 30px;
+    }
+  }
+}
