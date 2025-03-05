@@ -34,9 +34,36 @@
     margin-bottom: 15px;
     padding: 45px 54px 32px 59px;
   }
+
+  &::before {
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    z-index: 1;
+
+    content: '';
+    display: block;
+    width: 54px;
+    height: 40px;
+
+    background-image: url('../images/quotes.svg');
+
+    @include tablet {
+      top: 30px;
+      left: 40px;
+    }
+
+    @include desktop {
+      top: 32px;
+      left: 50px;
+    }
+  }
 }
 
 .slider__text {
+  position: relative;
+  z-index: 2;
+
   padding-left: 7px;
   padding-right: 16px;
 
