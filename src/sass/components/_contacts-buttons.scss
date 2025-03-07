@@ -1,0 +1,48 @@
+.contacts-buttons {
+  @extend %list;
+
+  @media screen and (max-width: 767px) {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts-buttons__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    @include tablet {
+      margin-right: 15px;
+    }
+  }
+}
+
+.contacts-buttons__button {
+  &.button--primary {
+    @include tablet {
+      width: 190px;
+    }
+
+    @include desktop {
+      width: 198px;
+    }
+  }
+
+  &.button--secondary {
+    @include tablet {
+      width: 174px;
+    }
+
+    @include desktop {
+      width: 180px;
+    }
+  }
+}

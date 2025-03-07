@@ -44,4 +44,12 @@
 
 .button__icon {
   margin-left: 10px;
+
+  .button--primary & {
+    stroke: $primary-white-color;
+  }
+
+  .button--secondary & {
+    stroke: $accent-color;
+  }
 }

@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 46px;
+  padding-bottom: 70px;
+
+  background-image: linear-gradient(
+    $primary-white-color 0 130px,
+    $secondary-bg-color 130px 100%
+  );
+
+  @include tablet {
+    padding-top: 76px;
+    background-image: linear-gradient(
+      $primary-white-color 0 154px,
+      $secondary-bg-color 154px 100%
+    );
+  }
+
+  @include desktop {
+    padding-top: 92px;
+
+    background-image: url('../images/contacts-bg.svg'),
+      linear-gradient(
+        $primary-white-color 0 194px,
+        $secondary-bg-color 194px 100%
+      );
+    background-repeat: no-repeat;
+    background-position: center top 194px, left top;
+  }
+}
+
+.contacts__container {
+  @media screen and (max-width: 767px) {
+    width: 260px;
+  }
+}

@@ -1,0 +1,44 @@
+.working-hours {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  line-height: 1.86;
+  border-bottom: 1px solid $border-color;
+
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 14px;
+  }
+
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 16px;
+  }
+}
+
+.working-hours__days {
+  color: $primary-black-color;
+
+  @include desktop {
+    letter-spacing: 0.04em;
+  }
+}
+
+.working-hours__time {
+  margin-left: 0;
+  color: $pretitle-color;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+}
