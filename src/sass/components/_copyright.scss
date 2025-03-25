@@ -1,0 +1,37 @@
+.copyright {
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  text-align: center;
+  border-top: 1px solid $border-color;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include tablet {
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+
+  @include desktop {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+.copyright__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.52;
+
+  @media screen and (max-width: 767px) {
+    width: 150px;
+  }
+
+  @include tablet {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+}

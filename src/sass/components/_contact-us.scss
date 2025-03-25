@@ -1,0 +1,21 @@
+.contact-us {
+  line-height: 1.86;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.contact-us__appeal {
+  color: $primary-black-color;
+}
+
+.contact-us__tel {
+  font-weight: 700;
+  color: $accent-color;
+}

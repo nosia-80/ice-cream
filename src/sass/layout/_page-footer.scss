@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: $secondary-bg-color;
+}
+
+.page-footer__container {
+  padding-top: 43px;
+  padding-bottom: 43px;
+
+  @media screen and (min-width: 768px) and (max-width: 1109px) {
+    align-items: baseline;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  @include desktop {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+}
+
+.page-footer__section-title {
+  @media screen and (max-width: 767px) {
+    width: 234px;
+    margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1109px) {
+    flex-basis: 340px;
+  }
+}
+
+.page-footer__content {
+  text-align: right;
+}
