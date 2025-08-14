@@ -1,7 +1,5 @@
 .gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex($main-axis: center);
   min-height: 200px;
 
   background-image: linear-gradient(

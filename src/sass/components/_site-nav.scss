@@ -1,0 +1,51 @@
+.site-nav {
+  @extend %list;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.site-nav__item {
+  @media screen and (max-width: 1109px) {
+    border-top: 1px solid #e18298;
+
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+  }
+
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+
+.site-nav__link {
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $primary-white-color;
+
+  transition: color 250ms $timing-function;
+
+  @media screen and (max-width: 1109px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

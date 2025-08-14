@@ -1,0 +1,33 @@
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  transition: stroke 250ms $timing-function;
+
+  @include desktop {
+    display: none;
+  }
+
+  &--close {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    stroke: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      stroke: $accent-color;
+    }
+  }
+
+  &--open {
+    stroke: $accent-color;
+
+    &:hover,
+    &:focus {
+      stroke: $primary-white-color;
+    }
+  }
+}

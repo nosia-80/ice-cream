@@ -1,7 +1,5 @@
 .more {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex($type: inline-flex, $main-axis: center);
 
   width: 18px;
   height: 18px;

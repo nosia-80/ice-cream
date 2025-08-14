@@ -1,0 +1,36 @@
+.mobile-menu {
+  @media screen and (max-width: 1109px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 250px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $menu-bg-color;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+
+    transition: transform 250ms $timing-function, opacity 250ms $timing-function,
+      visibility 250ms $timing-function;
+
+    &.is-open {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.mobile-menu__button {
+  display: flex;
+  width: 210px;
+  margin: 0 auto 20px;
+
+  @include desktop {
+    display: none;
+  }
+}

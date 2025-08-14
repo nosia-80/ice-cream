@@ -6,6 +6,10 @@ body {
   color: $primary-text-color;
 
   background-color: $primary-white-color;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 img {

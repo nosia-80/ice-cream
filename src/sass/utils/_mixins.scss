@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin centeredFlex($type: flex, $main-axis: flex-start, $cross-axis: center) {
+  display: $type;
+  justify-content: $main-axis;
+  align-items: $cross-axis;
+}

@@ -60,9 +60,7 @@
   }
 
   @include tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    @include centeredFlex($main-axis: space-between, $cross-axis: baseline);
   }
 }
 

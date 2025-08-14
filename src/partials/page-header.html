@@ -1,57 +1,90 @@
-<header>
-  <!-- Company logo -->
-  <a href="./index.html">
-    <img src="./images/logo.svg" width="50" height="50" alt="Company logo" />
-    IceCream
-  </a>
+<header class="page-header">
+  <div class="container page-header__container">
+    <!-- Company logo -->
+    <a class="logo">
+      <img
+        class="logo__icon"
+        src="./images/logo.svg"
+        width="50"
+        height="50"
+        alt="Company logo"
+      />
+      IceCream
+    </a>
 
-  <!-- Mobile menu open button -->
-  <button
-    type="button"
-    aria-label="Open menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-    <svg width="20" height="12">
-      <use href="./images/icons.svg#burger"></use>
-    </svg>
-  </button>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <!-- Mobile menu close button -->
+      <button
+        class="menu-button menu-button--close"
+        type="button"
+        aria-label="Close menu"
+        data-menu-close
+      >
+        <svg width="14" height="14">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
 
-  <!-- Purchase button -->
-  <button type="button">
-    Buy now
-    <svg width="8" height="10">
-      <use href="./images/icons.svg#angle-right"></use>
-    </svg>
-  </button>
+      <!-- Mobile menu purchase button -->
+      <button
+        class="button button--secondary button--with-icon mobile-menu__button"
+        type="button"
+      >
+        Buy now
+        <svg class="button__icon" width="8" height="10">
+          <use href="./images/icons.svg#angle-right"></use>
+        </svg>
+      </button>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu">
-    <!-- Mobile menu close button -->
-    <button type="button" aria-label="Close menu">
-      <svg width="14" height="14">
-        <use href="./images/icons.svg#cross"></use>
-      </svg>
-    </button>
+      <!-- Main navigation -->
+      <nav>
+        <!--Links to sections of the current page -->
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">About us</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">How it’s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <!-- Mobile menu purchase button -->
-    <button type="button">
-      Buy now
-      <svg width="8" height="10">
-        <use href="./images/icons.svg#angle-right"></use>
-      </svg>
-    </button>
+    <div class="page-header__actions">
+      <!-- Mobile menu open button -->
+      <button
+        class="menu-button menu-button--open"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-open
+      >
+        <svg width="20" height="12">
+          <use href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
 
-    <!-- Main navigation -->
-    <nav>
-      <!--Links to sections of the current page -->
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">How it’s made?</a></li>
-        <li><a href="">Our products</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
+      <!-- Purchase button -->
+      <button
+        class="button button--secondary button--with-icon page-header__button"
+        type="button"
+      >
+        Buy now
+        <svg class="button__icon" width="8" height="10">
+          <use href="./images/icons.svg#angle-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

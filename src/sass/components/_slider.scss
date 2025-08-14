@@ -150,9 +150,7 @@
 .slider > .slick-dots {
   @extend %list;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex($main-axis: center);
 }
 
 .slider > .slick-dots li {

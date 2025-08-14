@@ -1,0 +1,41 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  @include tablet {
+    padding-top: 30px;
+  }
+}
+
+.page-header__container {
+  @include centeredFlex();
+
+  @media screen and (max-width: 1109px) {
+    justify-content: space-between;
+  }
+}
+
+.page-header__actions {
+  @media screen and (max-width: 1109px) {
+    @include centeredFlex(inline-flex);
+  }
+
+  @include desktop {
+    margin-left: auto;
+  }
+}
+
+.page-header__button {
+  @media screen and (max-width: 1109px) {
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

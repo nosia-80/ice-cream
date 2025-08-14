@@ -1,0 +1,16 @@
+.logo {
+  @include centeredFlex(inline-flex);
+
+  font-family: $logo-font;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @include desktop {
+    margin-right: 60px;
+  }
+}
+
+.logo__icon {
+  margin-right: 20px;
+}
